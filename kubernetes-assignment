@@ -1,0 +1,14 @@
+Create a 3 node kubernetes cluster using minikube and virtualbox.
+
+Create a deployment with static PVC. This deployment will have a container that will continuously log date every 5 sec to the volume.
+
+Deploy another deployment with dynamic PVC. This deployment will have a container that will continuously log output of top command every 10 sec to the volume.
+
+Allow the above pods to run for few mins.
+
+Delete the 2nd deployment (don't delete pvc) and re-create it. Verify that the data from previous iteration persists.
+
+Create a docker image that will print all the prime numbers from 1 to 100 using python.
+
+Create a deployment in the same cluster that will use the above docker image. Check the output using kubectl logs <pod-name>. It should output those prime numbers.
+

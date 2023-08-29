@@ -1,0 +1,1000 @@
+ 1104  k exec -it deploy-5784565ff5-67gtz -- bash
+ 1105  minikube ssh
+ 1106  k delete deploy deploy
+ 1107  k get pods
+ 1108  k create -f dynamic-deployment.yaml 
+ 1109  minikube ssh
+ 1110  kubectl logs deploy-5784565ff5-67gtz
+ 1111  k get pos
+ 1112  k get pods
+ 1113  k logs deploy-5784565ff5-n4l4g 
+ 1114  k delete deploy deploy
+ 1115  kubectl logs -previous
+ 1116  kubectl logs --help
+ 1117  kubectl logs --previous
+ 1118  kubectl logs --previous deployment/deploy
+ 1119  k get pods
+ 1120  k create -f pv.yaml 
+ 1121  k create -f pvc.yaml 
+ 1122  k create -f demo-deploy.yaml 
+ 1123  k get pv
+ 1124  k get pvc
+ 1125  k get pod
+ 1126  minikube ssh
+ 1127  k logs demo-f74ddf964-f77wl
+ 1128  k exec -it demo-f74ddf964-f77wl -- bash
+ 1129  k get pods -o wide
+ 1130  ssh minikube-m03
+ 1131  k get pods -n default
+ 1132  k get pods -nodes
+ 1133  k get pods --help
+ 1134  k get nodes --help
+ 1135  k get nodes -o json
+ 1136  k get nodes -o wide
+ 1137  minikube ssh 192.168.59.102
+ 1138  ssh 192.168.59.102
+ 1139  minikube ssh -n 192.168.59.102
+ 1140  minikube ssh -n minikube-m03
+ 1141  k get deploy
+ 1142  k delete deploy demo
+ 1143  minikube ssh -n minikube-m03
+ 1144  minikube ssh 
+ 1145  k get pods
+ 1146  k get pvc
+ 1147  k get sc
+ 1148  df -h
+ 1149  k get rs
+ 1150  k describe pv pv-log
+ 1151  k describe pv example-local-pv
+ 1152  k create -f dynamic-deployment.yaml 
+ 1153  k get pods
+ 1154  k get pods -o wide
+ 1155  minikube ssh
+ 1156  k get pods -o wide
+ 1157  k delete deploy
+ 1158  k delete deploy deploy
+ 1159  minikube ssh
+ 1160  k create -f dynamic-deployment.yaml 
+ 1161  minikube ssh
+ 1162  k delete deploy deploy
+ 1163  k get pods
+ 1164  k create -f demo-deploy.yaml 
+ 1165  k get pos
+ 1166  k get pods
+ 1167  k get pods -o wide
+ 1168  minikube ssh -n minikube-m02
+ 1169  minikube ssh -n minikube-m03
+ 1170  k get pods
+ 1171  k delete deploy demo
+ 1172  minikube ssh -n minikube-m02
+ 1173  docker run --help
+ 1174  ls -l
+ 1175  ls *.py
+ 1176  python3 prime_no.py 
+ 1177  cat prime_no.py 
+ 1178  vi prime_no.py 
+ 1179  python3 prime_no.py 
+ 1180  docker -v
+ 1181  docker build -f Dockerfile_prime -t python_prime .
+ 1182  df -h
+ 1183  history
+ 1184  #docker build -f Dockerfile-prime -t python-prime .
+ 1185  cd doc
+ 1186  ls
+ 1187  docker build -f Dockerfile-prime -t python-prime .
+ 1188  docker run --name prime-no python-prime
+ 1189  docker ps
+ 1190  docker ps -a
+ 1191  docker images
+ 1192  docker run --name prime-no python-prime
+ 1193  docker rm prime-no 
+ 1194  docker run --name prime-no python-prime
+ 1195  docker rm prime-no 
+ 1196  kubectl create deployment --image=python-prime --dry-run=client -o yaml
+ 1197  kubectl create deployment -h
+ 1198  kubectl create deployment pyth-prime --image=python-prime --dry-run=client -o yaml
+ 1199  kubectl create deployment pyth-prime --image=python-prime --dry-run=client -o yaml > pyth-prime.yaml
+ 1200  cat pyth-prime.yaml 
+ 1201  k get pods
+ 1202  k create -f pyth-prime.yaml 
+ 1203  k get pods
+ 1204  k logs pyth-prime-86847b8dd4-cxtjx 
+ 1205  k get pos
+ 1206  k get pods
+ 1207  k delete pods
+ 1208  k delete deploy pyth-prime
+ 1209  docker build -f Dockerfile-prime -t python-prime .
+ 1210  docker run --name prime-no python-prime
+ 1211  docker rm prime-no 
+ 1212  docker images
+ 1213  docker rmi 47 8a
+ 1214  docker images
+ 1215  python3 /home/dell/doc/prime_no.py
+ 1216  docker build -f Dockerfile-prime -t python-prime .
+ 1217  docker run --name prime-no python-prime
+ 1218  docker ps
+ 1219  docker ps -a
+ 1220  docker rm prime-no 
+ 1221  docker build -f Dockerfile-prime -t python-prime .
+ 1222  docker run --name prime-no python-prime
+ 1223  docker rm prime-no 
+ 1224  docker run -d --name prime-no python-prime
+ 1225  docker exec -it prime-no bash
+ 1226  docker stop prime-no 
+ 1227  docker rm prime-no 
+ 1228  docker build -f Dockerfile-prime -t python-prime .
+ 1229  docker run -d --name prime-no python-prime
+ 1230  docker exec -it prime-no bash
+ 1231  docker stop prime-no 
+ 1232  docker rm prime-no 
+ 1233  docker run --name prime-no python-prime
+ 1234  docker rm prime-no 
+ 1235  docker build -f Dockerfile-prime -t python-prime .
+ 1236  docker run -i --name prime-no python-prime
+ 1237  docker ps
+ 1238  docker ps -a
+ 1239  docker rm prime-no 
+ 1240  docker images
+ 1241  docker rmi d7 46 5c 
+ 1242  docker images
+ 1243  docker rmi af
+ 1244  docker images
+ 1245  kubectl get nodes
+ 1246  kubectl get pods
+ 1247  kubectl get pv 
+ 1248  kubectl get pvc 
+ 1249  kubectl get deploy
+ 1250  docker run -it --name prime-no python-prime
+ 1251  docker ps
+ 1252  docker rm prime-no 
+ 1253  docker run -it --name prime-no python-prime bash
+ 1254  docker rm prime-no 
+ 1255  docker build -f Dockerfile-prime -t python-prime .
+ 1256  docker run -it --name prime-no python-prime bash
+ 1257  docker
+ 1258  docker rm prime-no 
+ 1259  docker images
+ 1260  docker rmi cc
+ 1261  kubectl get pods
+ 1262  minikube status
+ 1263  minikube stop
+ 1264  minikube status
+ 1265  kubectl get sc
+ 1266  kubectl get pods
+ 1267  cd
+ 1268  ls -l
+ 1269  cat top.log 
+ 1270  history
+ 1271  cd
+ 1272  minikube start
+ 1273  sudo rm -r /var/crash/*
+ 1274  kubectl get pv
+ 1275  kubectl get pvc
+ 1276  kubectl create -f demo-deploy.yaml 
+ 1277  kubectl create -f dynamic-deployment.yaml 
+ 1278  alias k=kubectl
+ 1279  k get pods
+ 1280  k describe pods
+ 1281  minikube ssh
+ 1282  k get pods
+ 1283  k describe pods
+ 1284  k delete deploy deploy
+ 1285  kubectl create -f dynamic-deployment.yaml 
+ 1286  k get pods
+ 1287  k get deploy
+ 1288  k get pods
+ 1289  k delete pod deploy-748c68cdc-pc7xd
+ 1290  k get pods
+ 1291  k get pods -o wide
+ 1292  minikube ssh
+ 1293  minikube ssh -n minikube-m02
+ 1294  docker run -it --name prime-no python-prime bash
+ 1295  k delete deploy demo
+ 1296  k delete deploy deploy
+ 1297  k get pods -o wide
+ 1298  minikube stop
+ 1299  k delete pvc pvc-local
+ 1300  kubectl delete pvc pvc-local
+ 1301  docker images --help
+ 1302  docker images 
+ 1303  whereis python-prime
+ 1304  whichis python-prime
+ 1305  whereis docker images
+ 1306  whereis dockerimages
+ 1307  whereis docker-images
+ 1308  docker images -a
+ 1309  docker stop prime-no 
+ 1310  kubectl delete pvc pvc-local
+ 1311  kubectl delete 
+ 1312  kubectl delete pvc pvc-local
+ 1313  cd
+ 1314  sudo rm -r /var/crash/*
+ 1315  minikube start
+ 1316  k get pods
+ 1317  alias k=kubectl
+ 1318  k get pos
+ 1319  k get pods
+ 1320  k get pv
+ 1321  k get pvc
+ 1322  k delete pv example-local-pv
+ 1323  k get sc
+ 1324  k create -f dynamic-pv.yaml 
+ 1325  k create -f dynamic-pvc.yaml 
+ 1326  k get pv
+ 1327  k get pvc
+ 1328  k create -f demo-deploy.yaml 
+ 1329  k get pods
+ 1330  k create -f dynamic-deployment.yaml 
+ 1331  k get pods
+ 1332  k describe pod deploy
+ 1333  k delete deploy deploy
+ 1334  k apply -f dynamic-pv.yaml 
+ 1335  k get pods
+ 1336  k get pvc
+ 1337  k get pv
+ 1338  k delete pv example-local-pv
+ 1339  k create -f dynamic-pv.yaml 
+ 1340  k create -f dynamic-pvc.yaml 
+ 1341  k create -f dynamic-deployment.yaml 
+ 1342  k get pods
+ 1343  k describe pods
+ 1344  minikube ssh -n minikube-m02
+ 1345  k get pods -o wide
+ 1346  minikube ssh -n minikube-m03
+ 1347  k get pods -o wide
+ 1348  k delete deploy demo
+ 1349  k get pods -o wide
+ 1350  k delete deploy deploy
+ 1351  minikube ssh minikube-m02
+ 1352  minikube ssh -n minikube-m02
+ 1353  k create -f dynamic-deployment.yaml 
+ 1354  k get pods -o wide
+ 1355  k logs deploy-748c68cdc-lp4pw
+ 1356  k get pods -o wide
+ 1357  docker images
+ 1358  docker ps
+ 1359  docker ps -a
+ 1360  docker rm prime-no 
+ 1361  k get pods -o wide
+ 1362  cd doc
+ 1363  docker build -f Dockerfile-prime -t python-prime .
+ 1364  docker run -d --name prime-no python-prime
+ 1365  docker exec -it prime-no bash
+ 1366  docker stop prime-no
+ 1367  k create deploy pyth-prime --image=python-prime --dry-run=client -o yaml
+ 1368  #k create deploy pyth-prime --image=python-prime --dry-run=client -o yaml > pyth-prime.yaml
+ 1369  cat pyth-prime.yaml 
+ 1370  k create -f pyth-prime.yaml 
+ 1371  k get pods
+ 1372  k delete deploy deploy
+ 1373  k describe pods
+ 1374  k get pods
+ 1375  k describe deploy
+ 1376  docker images
+ 1377  docker rmi 93
+ 1378  docker images
+ 1379  cat pyth-prime.yaml 
+ 1380  k get pods
+ 1381  k delete deploy pyth-prime
+ 1382  k get pods
+ 1383  k ps
+ 1384  docker ps
+ 1385  docker ps -a
+ 1386  docker rm prime-no 
+ 1387  k create -f pyth-prime.yaml 
+ 1388  k get pods -o wide
+ 1389  k describe pods
+ 1390  k logs pyth-prime-86847b8dd4-nw24n
+ 1391  k delete deploy pyth-prime
+ 1392  k create -f pyth-prime.yaml 
+ 1393  k get pods -o wide
+ 1394  k logs pyth-prime-86847b8dd4-nw24n
+ 1395  k logs pyth-prime-5ff8bff94f-kfzm2
+ 1396  k delete deploy pyth-prime
+ 1397  eval $(minikube docker-env)
+ 1398  ls /var/lib/
+ 1399  ls /var/lib/docker/
+ 1400  sudo ls /var/lib/docker/
+ 1401  sudo ls -l /var/lib/docker/
+ 1402  sudo ls -l /var/lib/docker/overlay2
+ 1403  eval $(minikube docker-env)
+ 1404  eval $(minikube docker-env)
+ 1405  k create -f pyth-prime.yaml 
+ 1406  k get pods -o wide
+ 1407  pyth-prime-855564ccdd-g7jb8
+ 1408  k logs pyth-prime-855564ccdd-g7jb8
+ 1409  k delete deploy pyth-prime
+ 1410  kubectl get pods -A
+ 1411  k get svc -A
+ 1412  k get pods
+ 1413  docker images
+ 1414  docker ps
+ 1415  docker ps -a
+ 1416  cd
+ 1417  eval $(minikube docker-env)
+ 1418  minikube addons
+ 1419  minikube addons --help
+ 1420  minikube addons enable registry
+ 1421  eval $(minikube docker-env)
+ 1422  docker build -f Dockerfile-prime -t python-prime .
+ 1423  cd doc
+ 1424  docker build -f Dockerfile-prime -t python-prime .
+ 1425  docker build -f Dockerfile-prime -t python-prime:v1 .
+ 1426  docker images
+ 1427  docker rmi 9f7
+ 1428  k create -f pyth-prime.yaml 
+ 1429  k get pods
+ 1430  k delete deploy pyth-prime
+ 1431  k create -f pyth-prime.yaml 
+ 1432  k get pods
+ 1433  k describe pods
+ 1434  k delete deploy pyth-prime
+ 1435  minikube ssh -n minikube-m03
+ 1436  cd
+ 1437  docker run -d -p 5000:5000 --restart=always --name registry registry:2
+ 1438  docker images
+ 1439  cd doc
+ 1440  docker build . -f Dockerfile-prime -t localhost:5000/python-prime:v1 
+ 1441  docker push localhost:5000/python-prime:v1
+ 1442  k create -f pyth-prime.yaml 
+ 1443  k get pods
+ 1444  k describe pods
+ 1445  k get pods
+ 1446  k delete deploy pyth-prime
+ 1447  docker images
+ 1448  docker rmi 9f7
+ 1449  docker rmi 9f79d3634adb
+ 1450  docker rmi python-prime
+ 1451  docker images
+ 1452  docker rmi python-prime:v1 
+ 1453  docker rmi localhost:5000/python-prime:v1
+ 1454  docker images
+ 1455  docker build . -t localhost:5000/my-image
+ 1456  docker push localhost:5000/my-image
+ 1457  docker run -d --name prime-no localhost:5000/my-image
+ 1458  docker exec -it prime-no bash
+ 1459  k create -f pyth-prime.yaml 
+ 1460  k get pods -o wide
+ 1461  k describe pods
+ 1462  docker version
+ 1463  k delete deploy pyth-prime
+ 1464  docker ps 
+ 1465  docker stop prime-no registry 
+ 1466  minikube docker-env
+ 1467  cd
+ 1468  minikube docker-env
+ 1469  minikube image ls --format table
+ 1470  docker image ls
+ 1471  docker rmi localhost:5000/my-image:latest 
+ 1472  docker ps -a
+ 1473  docker rm prime-no registry 
+ 1474  docker rmi localhost:5000/my-image:latest 
+ 1475  docker build . -t python-prime
+ 1476  cd doc
+ 1477  docker build . -t python-prime
+ 1478  docker images
+ 1479  minikube image load python-prime
+ 1480  minikube image ls --format table
+ 1481  kubectl create -f pyth-prime.yaml 
+ 1482  k get pods
+ 1483  k logs pyth-prime-856d995bc5-njgz5
+ 1484  k exec -it pyth-prime-856d995bc5-njgz5 -- bash
+ 1485  k logs pyth-prime-856d995bc5-njgz5
+ 1486  k delete deploy pyth-prime
+ 1487  minikube image
+ 1488  minikube images
+ 1489  minikube image ls
+ 1490  minikube image rm python-prime
+ 1491  minikube image ls
+ 1492  cd ./dock
+ 1493  cd ../dock/
+ 1494  ls
+ 1495  docker build . -t python-dock
+ 1496  docker run -d --name python-docker python-dock
+ 1497  docker ps
+ 1498  docker ps -a
+ 1499  docker rm python-docker 
+ 1500  docker run --name python-docker python-dock
+ 1501  docker ps
+ 1502  docker ps -a
+ 1503  docker rm python-docker 
+ 1504  docker images
+ 1505  docker rmi eac b03
+ 1506  docker images
+ 1507  cd ../doc
+ 1508  docker build . -t python-prime:v1
+ 1509  docker run --name prime-no python-prime
+ 1510  docker run --name prime-no python-prime:v1
+ 1511  docker images
+ 1512  docker exec -it prime-no bash
+ 1513  cd ../dock
+ 1514  ls
+ 1515  docker build . -t python-dock
+ 1516  docker run --name python-docker python-dock
+ 1517  docker ps -a
+ 1518  docker rm python-docker 
+ 1519  docker images
+ 1520  docker rmi 6f
+ 1521  docker stats
+ 1522  docker system df
+ 1523  docker images
+ 1524  docker build . -t python-dock
+ 1525  docker run --name python-docker python-dock
+ 1526  docker images
+ 1527  docker ps -a
+ 1528  docker ps
+ 1529  docker rm python-docker 
+ 1530  docker images
+ 1531  docker rmi python-dock
+ 1532  docker build . -t python-dock
+ 1533  docker run --name python-docker python-dock
+ 1534  docker ps
+ 1535  docker ps -a
+ 1536  docker logs python-docker 
+ 1537  docker ps -a
+ 1538  docker rm python-docker 
+ 1539  docker images
+ 1540  minikube image load python-dock
+ 1541  minikube image ls --format table
+ 1542  kubectl create -f pyth-prime.yaml 
+ 1543  kubectl get pods
+ 1544  k logs pyth-prime-77cf59b9df-mhftx
+ 1545  k delete deploy pyth-prime
+ 1546  cd
+ 1547  k create -f dynamic-deployment.yaml 
+ 1548  k get pods
+ 1549  k get pods -o wide
+ 1550  k create -f demo-deploy.yaml 
+ 1551  k get pods -o wide
+ 1552  minikube image ls
+ 1553  k get pods -o wide
+ 1554  k delete deploy demo
+ 1555  k delete deploy deploy
+ 1556  minikube ssh -n minikube-m03
+ 1557  minikube ssh -n minikube-m02
+ 1558  k get pods -o wide
+ 1559  k describe pv
+ 1560  k describe pvc
+ 1561  minikube stop
+ 1562  minikube start
+ 1563  minikube ssh -n minikube-m02
+ 1564  minikube ssh -n minikube-m03
+ 1565  minikube logs
+ 1566  minikube stop
+ 1567  docker images
+ 1568  minikube image ls
+ 1569  docker ps -a
+ 1570  docker rm prime-no 
+ 1571  minikube version
+ 1572  minikube start
+ 1573  kubectl get all
+ 1574  kubectl get all -all-namespaces
+ 1575  kubectl get all --all-namespaces
+ 1576  minikube dashboard --url
+ 1577  alias
+ 1578  k get pv
+ 1579  k delete pv example-local-pv
+ 1580  k create -f dynamic-pv.yaml 
+ 1581  k create -f dynamic-pvc.yaml 
+ 1582  k get pv
+ 1583  k get pods -o wide
+ 1584  k describe pv example-local-pv
+ 1585  k delete pv example-local-pv
+ 1586  k get pv
+ 1587  k create -f dynamic-pv.yaml 
+ 1588  k create -f dynamic-pvc.yaml 
+ 1589  k create -f dynamic-deployment.yaml 
+ 1590  k get pods -o wide
+ 1591  k create -f demo-deploy.yaml 
+ 1592  k get pods -o wide
+ 1593  k exec -it deploy-748c68cdc-bjlvl -- bash
+ 1594  minikube ssh
+ 1595  k delete deploy deploy
+ 1596  minikube ssh -n minikube-m03
+ 1597  k get pods
+ 1598  k logs demo-f74ddf964-stkts
+ 1599  k create -f dynamic-deployment.yaml 
+ 1600  k get pods
+ 1601  k delete deploy demo
+ 1602  k get pods -o wide
+ 1603  k delete deploy deploy
+ 1604  minikube ssh
+ 1605  k get pods -o wide
+ 1606  minikube image ls --help
+ 1607  minikube image ls --format table
+ 1608  k create -f pyth-prime.yaml 
+ 1609  k get pods -o wide
+ 1610  k logs pyth-prime-77cf59b9df-89dvc
+ 1611  k delete deploy pyth-prime
+ 1612  source <(kubectl completion bash) # set up autocomplete in bash into the current shell, bash-completion package should be installed first.
+ 1613  echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+ 1614  alias k=kubectl
+ 1615  complete -o default -F __start_kubectl k
+ 1616  k get pods
+ 1617  k create -f demo-deploy.yaml 
+ 1618  k get pods -o wide 
+ 1619  minikube ssh -n minikube-m03
+ 1620  k get pods -o wide 
+ 1621  k delete deployment demo 
+ 1622  k get pods -o wide 
+ 1623  minikube ssh
+ 1624  pods
+ 1625  k get pods -o wide
+ 1626  ls /var/lib
+ 1627  ls /var/lib/minikube
+ 1628  k get pods
+ 1629  minikube status
+ 1630  while true;  do python3 prime_no.py ; done
+ 1631  k get pods
+ 1632  minikube status
+ 1633  kubectl get pv
+ 1634  alias
+ 1635  alias k=kubectl
+ 1636  minikube stop
+ 1637  minikube status
+ 1638  sudo rm -r /var/crash/*
+ 1639  kubectl delete pvc pv-claim 
+ 1640  kubectl delete pvc pvc-local 
+ 1641  cd
+ 1642  history
+ 1643  clear
+ 1644  minikube start
+ 1645  alias k=kubectl
+ 1646  k get pv
+ 1647  k delete pv pv-log
+ 1648  k delete pv example-local-pv
+ 1649  k get pv
+ 1650  k get pvc
+ 1651  k create -f pv.yaml 
+ 1652  k create -f pvc.yaml 
+ 1653  k create -f dynamic-pvc.yaml 
+ 1654  k create -f dynamic-pv.yaml 
+ 1655  k get pv
+ 1656  k get pvc
+ 1657  k create -f dynamic-deployment.yaml 
+ 1658  k create -f demo-deploy.yaml 
+ 1659  k get pods
+ 1660  k desrcribe pods
+ 1661  k describe pods
+ 1662  k get pods -o wide
+ 1663  minikube ssh -n minikube-m02
+ 1664  minikube ssh -n minikube-m03
+ 1665  k delete deploy deploy
+ 1666  k delete deploy demo
+ 1667  minikube ssh -n minikube-m02
+ 1668  k create -f dynamic-deployment.yaml 
+ 1669  k delete deploy deploy
+ 1670  minikube ssh -n minikube-m02
+ 1671  k get pods
+ 1672  minikube stop
+ 1673  minikube start
+ 1674  minikube ssh -n minikube-m02
+ 1675  minikube ssh -n minikube-m03
+ 1676  k get pdos
+ 1677  k get pods
+ 1678  minikube image ls --help
+ 1679  minikube image ls --format table
+ 1680  k get csr
+ 1681  cd doc
+ 1682  ls
+ 1683  docker images
+ 1684  docker ps -a
+ 1685  docker rmi python-prime:v1 
+ 1686  docker build . -f python-prime
+ 1687  docker build . -t python-prime
+ 1688  docker run -help
+ 1689  docker run --help
+ 1690  docker run --name prime-no python-prime
+ 1691  docker ps
+ 1692  docker ps -a
+ 1693  docker logs
+ 1694  docker logs --help
+ 1695  docker logs prime-no 
+ 1696  docker images
+ 1697  docker rmi e9b
+ 1698  docker rm prime-no 
+ 1699  docker rmi e9b
+ 1700  docker images
+ 1701  k get pods
+ 1702  minikube status
+ 1703  minikube ssh -n minikube-m02
+ 1704  git --version
+ 1705  cd
+ 1706  git config --list
+ 1707  who
+ 1708  rm xaa xab xac
+ 1709  rm amc.txt 
+ 1710  rm user.lst 
+ 1711  rm chapa?
+ 1712  mkdir gittraining
+ 1713  cd gittraining/
+ 1714  git config --help
+ 1715  git config --global user.name "dell-user"
+ 1716  git config --list
+ 1717  git init
+ 1718  ls
+ 1719  ls -a
+ 1720  git commit
+ 1721  git status
+ 1722  cat > first_file.txt
+ 1723  ls
+ 1724  git status
+ 1725  rm first_file.txt 
+ 1726  cd
+ 1727  rmdir gittraining/
+ 1728  rm -r gittraining/
+ 1729  ls
+ 1730  ls -l
+ 1731  minikube status
+ 1732  k get pods
+ 1733  k get deploy
+ 1734  minikube stop
+ 1735  #git clone -b main https://github.com/ronitrd/Git_training.git
+ 1736  ls
+ 1737  git config user.name "ronit dravid"
+ 1738  git config --list
+ 1739  git config --global user.name "ronit dravid"
+ 1740  git config --list
+ 1741  git config --global user.email "ronitdravid@gmail.com"
+ 1742  git config --list
+ 1743  git clone -b main https://github.com/ronitrd/Git_training.git
+ 1744  ls 
+ 1745  cd Git_training/
+ 1746  kubectl get pods
+ 1747  ssh-keygen -t ed25519 -C "ronitdravid@gmail.com"
+ 1748  cat /home/dell/.ssh/id_ed25519.pub
+ 1749  ssh -T git@github.com
+ 1750  git status
+ 1751  ls
+ 1752  git pull
+ 1753  ls
+ 1754  cat testfile.txt 
+ 1755  sudo rm -r /var/crash/*
+ 1756  cd
+ 1757  cd Git_training/
+ 1758  git status
+ 1759  git log --oneline
+ 1760  echo "This is sample File 1" >> samplefile1.txt
+ 1761  echo "This is sample File 2" >> samplefile2.txt
+ 1762  ll
+ 1763  git status
+ 1764  git add .
+ 1765  git status
+ 1766  git commit -m "sample Files added"
+ 1767  git log
+ 1768  git push
+ 1769  ssh -T git@github.com
+ 1770  git push
+ 1771  git diff
+ 1772  git status
+ 1773  git push
+ 1774  git config --list
+ 1775  git push
+ 1776  git log --oneline
+ 1777  cd
+ 1778  minikube start
+ 1779  minikube stop
+ 1780  sudo systemctl restart docker
+ 1781  minikube start
+ 1782  kubectl create -f demo-deploy.yaml 
+ 1783  kubectl get pods
+ 1784  alias k=kubectl
+ 1785  k get pv
+ 1786  k describe pod
+ 1787  k exec -it demo-f74ddf964-pk82k
+ 1788  k exec -it demo-f74ddf964-pk82k -- bash
+ 1789  kubectl get nodes -o wide
+ 1790  kubectl get nodes -o wide --show-labels
+ 1791  minikube image ls --format table
+ 1792  k get pods
+ 1793  k delete deploy demo
+ 1794  k get pods
+ 1795  minikube status
+ 1796  cd Git_training/
+ 1797  git branch develop
+ 1798  git branch
+ 1799  git switch -h
+ 1800  git switch develop 
+ 1801  git branch
+ 1802  ls
+ 1803  cat > testfile1.txt
+ 1804  cat > testfile2.txt
+ 1805  git status
+ 1806  git add .
+ 1807  git commit -m "new branch testfiles"
+ 1808  git push -h
+ 1809  git push origin develop 
+ 1810  git branch -a
+ 1811  git remote -v
+ 1812  git remote set-url origin git@github.com:ronitrd/Git_training.git
+ 1813  git remote -v
+ 1814  vi testfile1.txt 
+ 1815  git commit -am "commit 2"
+ 1816  vi testfile2.txt 
+ 1817  git commit -am "commit file2"
+ 1818  git log
+ 1819  git push
+ 1820  git push origin develop 
+ 1821  git branch
+ 1822  git switch main
+ 1823  git status
+ 1824  ll
+ 1825  alias
+ 1826  ls -l
+ 1827  cat testfile.txt 
+ 1828  git merge develop -m "merging develop to main"
+ 1829  git status
+ 1830  ll
+ 1831  git log --oneline --graph
+ 1832  git add .
+ 1833  git commit
+ 1834  git log --oneline --graph
+ 1835  git log --help
+ 1836  git log --oneline --
+ 1837  git log --oneline --path
+ 1838  git log --oneline -- path
+ 1839  ll
+ 1840  cat testfile.txt 
+ 1841  cat samplefile1.txt 
+ 1842  echo "This is Stash practice" >> samplefile1.txt 
+ 1843  echo "This is Stash practice" >> samplefile2.txt 
+ 1844  git status
+ 1845  git stash
+ 1846  git status
+ 1847  echo "testfile updated" >> testfile.txt 
+ 1848  cat testfile.txt 
+ 1849  git status
+ 1850  git commit -am "testfile update"
+ 1851  git push
+ 1852  git status
+ 1853  git stash list
+ 1854  git stash apply
+ 1855  git commit -am "stash changes"
+ 1856  git status
+ 1857  git push
+ 1858  git status
+ 1859  git log --oneline --graph
+ 1860  git stash list
+ 1861  git stash drop
+ 1862  git stash list
+ 1863  git status
+ 1864  k get pods
+ 1865  minikube stop
+ 1866  cd
+ 1867  clear
+ 1868  sudo apt update
+ 1869  sudo apt install mpv
+ 1870  mpv --version
+ 1871  date
+ 1872  lsusb
+ 1873  sudo lsusb -v | grep -i bcdusb
+ 1874  lsusb
+ 1875  df -Th | grep media
+ 1876  lsblk | grep media
+ 1877  cat /proc/mounts | grep media
+ 1878  sudo dmesg
+ 1879  lsusb
+ 1880  dmesg
+ 1881  sudo dmesg
+ 1882  df -kh
+ 1883  lsblk
+ 1884  mpv --help
+ 1885  mpv --list-options
+ 1886  sudo add-apt-repository ppa:obsproject/obs-studio
+ 1887  sudo apt update
+ 1888  sudo apt install ffmpeg obs-studio
+ 1889  lsusb
+ 1890  find . -name MacroSilicon USB Video
+ 1891  lsusb
+ 1892  cd
+ 1893  sudo rm -r /var/crash/*
+ 1894  cd /usr/share/doc
+ 1895  ls
+ 1896  clear
+ 1897  cd
+ 1898  ls ~/.config/
+ 1899  ls ~/.config/mpv/
+ 1900  mpv 2023-07-11\ 18-16-23.mkv 
+ 1901  ls /usr/share/doc/mpv/
+ 1902  ll /usr/share/doc/mpv/
+ 1903  clear
+ 1904  cat ~/.config/mpv/mpv.conf
+ 1905  cp -r /usr/share/doc/mpv/ ~/.config/
+ 1906  cat ~/.config/mpv/mpv.conf
+ 1907  ls ~/.config/mpv/
+ 1908  ls ~/.config/mpv/input.conf.gz 
+ 1909  cat ~/.config/mpv/input.conf.gz 
+ 1910  clear
+ 1911  guncat ~/.config/mpv/input.conf.gz 
+ 1912  ls /etc/mpv/
+ 1913  cat /etc/mpv/mpv.conf 
+ 1914  mpv --hwdec --help
+ 1915  mpv --hwdec 
+ 1916  ll ~/.config/mpv/input.conf.gz 
+ 1917  gzip -d ~/.config/mpv/input.conf.gz 
+ 1918  ll ~/.config/mpv/
+ 1919  cat ~/.config/mpv/input.conf 
+ 1920  cat ~/.config/mpv/mplayer-input.conf
+ 1921  cp /etc/mpv/mpv.conf  ~/.config/mpv/
+ 1922  ls ~/.config/mpv/
+ 1923  cat ~/.config/mpv/mpv.conf
+ 1924  mpv --hwdec
+ 1925  mpv 2023-07-11\ 18-16-23.mkv
+ 1926  mpv Downloads/Rainier.png 
+ 1927  cat ~/.config/mpv/mpv.conf
+ 1928  vi ~/.config/mpv/mpv.conf
+ 1929  mpv --hwdec
+ 1930  cat ~/.config/mpv/mpv.conf
+ 1931  mpv 2023-07-11\ 18-16-23.mkv
+ 1932  vi ~/.config/mpv/mpv.conf
+ 1933  mpv 2023-07-11\ 18-16-23.mkv
+ 1934  mpv 2023-07-11\ 18-16-23.mkv --hwdec=auto
+ 1935  vi ~/.config/mpv/mpv.conf
+ 1936  mpv 2023-07-11\ 18-16-23.mkv --hwdec=auto
+ 1937  mpv Downloads/Rainier.png 
+ 1938  vi ~/.config/mpv/mpv.conf
+ 1939  sudo apt-get install libmpv1 libva2 vainfo
+ 1940  mpv 2023-07-11\ 18-16-23.mkv --hwdec=auto
+ 1941  vi ~/.config/mpv/mpv.conf
+ 1942  mpv 2023-07-11\ 18-16-23.mkv 
+ 1943  mpv Downloads/test_video_1920.mp4 
+ 1944  mpv 2023-07-11\ 18-16-23.mkv 
+ 1945  sudo apt-get install libmpv1 libva2 vainfo
+ 1946  mpv 2023-07-12\ 12-48-17.mkv 
+ 1947  mpv Downloads/test_video_1920.mp4 
+ 1948  mpv 2023-07-12\ 13-03-59.mkv 
+ 1949  mpv 2023-07-12\ 13-21-04.mkv 
+ 1950  mpv 2023-07-12\ 13-34-25.mkv 
+ 1951  mpv --hwdec
+ 1952  mpv 2023-07-12\ 13-34-25.mkv 
+ 1953  pwd
+ 1954  mpv 2023-07-12\ 13-48-50.mkv 
+ 1955  mpv Downloads/wp2831937-black-background-png.png 
+ 1956  ffmpeg -i Downloads/wp2831937-black-background-png.png -pix_fmt yuv444p output.yuv
+ 1957  mpv output.yuv 
+ 1958  convert Downloads/wp2831937-black-background-png.png -colorspace YUV output.yuv
+ 1959  ffmpeg -v
+ 1960  ffmpeg --help
+ 1961  mpv --version
+ 1962  mpv Downloads/wp2831937-black-background-png.png 
+ 1963  mpv --hwdec=auto
+ 1964  gimp 
+ 1965  sudo apt install gimp
+ 1966  mpv Downloads/wp2831937-black-background-png.png 
+ 1967  vi ~/.config/mpv/mpv.conf
+ 1968  ls /dev/video3
+ 1969  ls /dev/video4
+ 1970  obs --version
+ 1971  ls  /etc/gdm3/
+ 1972  cat  /etc/gdm3/custom.conf 
+ 1973  sudo vi /etc/gdm3/custom.conf 
+ 1974  df -h
+ 1975  cd
+ 1976  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444p output2.yuv
+ 1977  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444p output.yuv
+ 1978  imagemagick
+ 1979  sudo apt-get update
+ 1980  sudo apt-get install imagemagick ffmpeg
+ 1981  convert Downloads/wp2831937-black-background-png.png -colorspace YUV output.yuv
+ 1982  [200~mpv --demuxer=rawvideo --demuxer-rawvideo-w=width --demuxer-rawvideo-h=height --demuxer-rawvideo-format=yuv444p output.yuv
+ 1983  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444p output.yuv
+ 1984  mpv --list-options
+ 1985  mpv 2023-07-12\ 16-46-03.mkv --hwdec=auto
+ 1986  cat ~/.config/mpv/mpv.conf
+ 1987  mplayer
+ 1988  mpv --list-options | grep -i yuv
+ 1989  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pix_fmt yuv444 out.yuv
+ 1990  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pix_fmt yuv422 out.yuv
+ 1991  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pix_fmt yuv420 out.yuv
+ 1992  ffmpeg -i 2023-07-12\ 17-17-46.mkv -pix_fmt yuv444 out.yuv
+ 1993  history
+ 1994  ffmpeg -i 2023-07-12\ 17-17-46.mkv -pix_fmt yuv444 outp.yuv
+ 1995  ffmpeg -i 2023-07-12\ 17-17-46.mkv out.yuv
+ 1996  ffplay -s WxH out.yuv 
+ 1997  ffplay -s 1920x1080 out.yuv 
+ 1998  vi ~/.config/mpv/mpv.conf
+ 1999  cd
+ 2000  sudo rm -r /var/crash/*
+ 2001  ls -l
+ 2002  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pixel_format yuv444p out_444.yuv
+ 2003  ffplay -s 1920x1080 out_444.yuv 
+ 2004  ffplay -s 1920x1080 out.yuv 
+ 2005  mpv out.yuv 
+ 2006  ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=nokey=1:noprint_wrappers=1 2023-07-12\ 17-17-46.mkv 
+ 2007  ffprobe -demuxers
+ 2008  ffprobe 2023-07-12\ 17-17-46.mkv 
+ 2009* ffprobe 
+ 2010  ffprobe Downloads/wp2831937-black-background-png.png 
+ 2011  ffplay Downloads/wp2831937-black-background-png.png 
+ 2012  ffplay -s 1920x1080 output.yuv 
+ 2013  ffmpeg --version
+ 2014  ffmpeg -h
+ 2015  ffmpeg -version
+ 2016  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444p output.yuv
+ 2017  ffmpeg -i Downloads/Black-PNG-HD-Photo.png -pix_fmt yuv444p black.yuv
+ 2018  ffprobe black.yuv 
+ 2019  ffplay -s 1920x1080 black.yuv 
+ 2020  ffmpeg -i Downloads/wp2831937-black-background-png.png -pix_fmt yuv444p outp.yuv
+ 2021  ffplay outp.yuv 
+ 2022  ffplay -s 1920x1080 outp.yuv 
+ 2023  ffplay -s 1920x1080 output.yuv 
+ 2024  history
+ 2025  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pix_fmt yuv444p out.yuv
+ 2026  ffplay -s 1920x1080 out.yuv 
+ 2027  ffmpeg -i 2023-07-12\ 17-17-46.mkv out_420.yuv
+ 2028  ffplay -s 1920x1080 out_420.yuv 
+ 2029  ffplay -s 1920x1080 outp.yuv 
+ 2030  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v rawvideo -pix_fmt yuv444p out_444.yuv
+ 2031  ffplay -s 1920x1080 out_444.yuv 
+ 2032  ffplay -video_size --help
+ 2033  man ffplay
+ 2034  ffplay -pix_fmt
+ 2035  man ffplay
+ 2036  ffplay -pix_fmts
+ 2037  ffprobe black.yuv 
+ 2038  ffprobe out_444.yuv 
+ 2039  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt 2023-07-12\ 17-17-46.mkv 
+ 2040  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt out_444.yuv 
+ 2041  mpv 2023-07-12\ 17-17-46.mkv 
+ 2042  ffmpeg -h
+ 2043  ffmpeg -f lavfi -i 2023-07-12\ 17-17-46.mkv=size=1920x1080:duration=10 -pix_fmt yuv444p outplay.yuv
+ 2044  ffmpeg -f lavfi -i testsrc=size=1920x1080:duration=10 -pix_fmt yuv444p outplay.yuv
+ 2045  ffplay -s 1920x1080 outplay.yuv 
+ 2046  ffmpeg -f lavfi -i testsrc=size=1280x720:duration=10 -pix_fmt yuv444p outplay1.yuv
+ 2047  ffplay -s 1920x1080 outplay1.yuv 
+ 2048  ffplay -s 1280x720 outplay1.yuv 
+ 2049  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_444.yuv
+ 2050  ffplay -s 1920x1080 out_444.yuv 
+ 2051  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_444.yuv
+ 2052  ffplay -f rawvideo -pix_fmt yuv444p -video_size 1920x1080 -i out_444.yuv
+ 2053  #mpv -demuxer rawvideo -rawvideo w=1920:h=1080:format=i444 out_444.yuv 
+ 2054  mpv --list-options |grep -i demuxer
+ 2055  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_444.yuv
+ 2056  ffprobe 2023-07-12\ 17-17-46.mkv 
+ 2057  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_444.yuv
+ 2058  ffplay -s 1920x1080 2023-07-12\ 17-17-46.mkv 
+ 2059  ffplay -video_size 1920x1080 2023-07-12\ 17-17-46.mkv 
+ 2060  ffplay -video_size 1920x1080 -i 2023-07-12\ 17-17-46.mkv 
+ 2061  ffplay -i 2023-07-12\ 17-17-46.mkv 
+ 2062  ffplay -pixel_format yuv444p -video_size 1920x1080 -i 2023-07-12\ 17-17-46.mkv 
+ 2063  ffplay -pixel_format yuv444p -i 2023-07-12\ 17-17-46.mkv 
+ 2064  df  -h
+ 2065  ffplay -video_size hd1080 -i 2023-07-12\ 17-17-46.mkv 
+ 2066  ffplay -i Downloads/test_video_1920.mp4 
+ 2067  history > history_13072023.txt
+ 2068  ls -l
+ 2069  ffmpeg -i 2023-07-12\ 17-17-46.mkv -c:v libx264 -pix_fmt yuv444p testvid.mp4
+ 2070  ls -l
+ 2071  ffplay -i testvid.mp4 
+ 2072  ffplay -i 2023-07-12\ 17-17-46.mkv 
+ 2073  ffplay -i testvid.mp4 
+ 2074* 
+ 2075  mpv testvid.mp4 
+ 2076  ffplay -s 1920x1080 output.yuv 
+ 2077  ffmpeg -i Downloads/wp2831937-black-background-png.png -c:v libx264 -pix_fmt yuv444p outplay.yuv
+ 2078  ffplay -s 1920x1080 outplay.yuv 
+ 2079  ffplay -s 1920x1080 output.yuv 
+ 2080  ffplay -i outplay.yuv 
+ 2081  scp out_444.yuv sp@10.11.11.30:/home/sp/Downloads/
+ 2082  ffmpeg -i testvid.mp4 -c:v rawvideo -pix_fmt yuv444p test.yuv
+ 2083  mpv --demuxer rawvideo --rawvideo w=1920:h=1080:format=i444 out_444.yuv
+ 2084  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444p out_444.yuv
+ 2085  mpv --list-options | grep --demux
+ 2086  mpv --list-options | grep demux
+ 2087  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=i444 out_444.yuv
+ 2088  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=yuv444 out_444.yuv
+ 2089  mpv --demuxer=rawvideo --demuxer-rawvideo-w=1920 --demuxer-rawvideo-h=1080 --demuxer-rawvideo-format=YUV444p out_444.yuv
+ 2090  ffplay -i testvid.mp4 
+ 2091  ffplay --help
+ 2092  ffplay -pixel_format=yuv444p -video_size 1920x1080 -i testvid.mp4 
+ 2093  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt out_444.yuv 
+ 2094  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt 2023-07-12\ 17-17-46.mkv 
+ 2095  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i 2023-07-12\ 17-17-46.mkv 
+ 2096  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i testvid.mp4 
+ 2097  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt out_444.yuv 
+ 2098  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt testvid.mp4 
+ 2099  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_420.yuv > part.mp4
+ 2100  ffplay -f rawvideo -pixel_format yuv444p -video_size 1920x1080 -i out_420.yuv | tee part.mp4
+ 2101  ffprobe -v error -hide_banner -of default=noprint_wrappers=0 -print_format flat  -select_streams v:0 -show_entries stream=pix_fmt testvid.mp4 
+ 2102  ffplay --help
+ 2103  history > history_13072023final.txt 

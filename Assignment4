@@ -1,0 +1,100 @@
+-:Steps for Installing Minikube,Virtualbox:-
+
+1.sudo apt-get update -y
+
+2.sudo apt-get install curl wget apt-transport-https -y
+
+#Install VirtualBox
+
+3.sudo apt-get install virtualbox virtualbox-ext-pack
+
+#Install Minikube (requires root priviledges)
+
+4.wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+5.cp minikube-linux-amd64 /usr/local/bin/minikube
+
+6.chmod 755 /usr/local/bin/minikube
+
+#check Version of Minikube
+
+7.minikube version
+
+#Install kubectl (using root priviledges)
+[
+#download GPG key,then add it.
+
+8.curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+#add Kubernetes apt repository
+
+9.echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list
+
+10.apt-get update -y
+
+11.apt-get install kubectl -y
+  ]
+
+#check the version of kubectl installed
+
+12.kubectl version -o json
+
+===================================================================================
+#Start Minikube(since you want 3 nodes and driver is virtualbox)
+
+13.minikube start --driver="virtualbox" --nodes=3
+
+#stop the cluster
+minikube stop
+#command to delete cluster
+minikube delete --all
+#check status 
+minikube status
+minikube ssh (for main node)
+minikube ssh -n minikube-m03 (for worker node) 
+
+====================================================================================
+#Create a pv.yaml and pvc.yaml
+#Create a Deployment and set created pvc inside it 
+kubectl create deployment demo --image=ubuntu:18.04 --dry-run=client -o yaml
+#Create another deployment
+kubectl create deployment demo2 --image=ubuntu:18.04 --dry-run=client -o yaml
+#Create a storageClass (local) for dynamic pvc  
+#Create a (local) pv with nodeaffinity and pv,pvc with storageClassName
+
+====================================================================================
+#Create Dockerfile for python
+#Build Dockerfile to create docker image
+docker build -f Dockerfile-prime -t python-prime .
+
+#Run docker container
+
+docker run -d --name prime-no python-prime
+
+#then create deployment with same docker image
+kubectl create deployment pyth-prime --image=python-prime --dry-run=client -o yaml
+
+#To USE LOCAL IMAGES in MINIKUBE. WE WILL USE MINIKUBE IMAGE LOAD
+$ docker build -t second-image -f ./Dockerfile .
+
+Now the image exists, but it’s not yet available in Minikube. Let’s load it:
+
+$ minikube image load second-image
+
+Let’s list the images and check if it's available:
+
+$ minikube image ls --format table
+
+We can see the new image in the list. This means that we can create the pod:
+
+$ kubectl run second-container --image=second-image --image-pull-policy=Never --restart=Never
+
+The container starts successfully. Let's check the logs:
+
+$ kubectl logs second-container
+
+
+
+
+
+
